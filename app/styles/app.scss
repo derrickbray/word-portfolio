@@ -31,7 +31,7 @@
   &__item {
     position: relative;
     width: calc(100% / 3);
-    border: 1px solid black;
+    // border: 1px solid black;
 
     &-pic {
       object-fit: cover;
@@ -40,6 +40,7 @@
     &-content {
       position: absolute;
       top: 10%;
+      padding: 0.5rem;
 
       &-title {
         text-align: center;
