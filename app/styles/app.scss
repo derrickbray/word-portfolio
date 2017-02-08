@@ -21,6 +21,7 @@
 .grid__title {
   display: flex;
   justify-content: center;
+  // border: 2px solid black;
 }
 
 .grid {
@@ -28,7 +29,21 @@
   flex-wrap: wrap;
 
   &__item {
+    position: relative;
     width: calc(100% / 3);
     border: 1px solid black;
+
+    &-pic {
+      object-fit: cover;
+    }
+
+    &-content {
+      position: absolute;
+      top: 10%;
+
+      &-title {
+        text-align: center;
+      }
+    }
   }
 }
