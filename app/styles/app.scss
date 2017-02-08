@@ -13,7 +13,25 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 .grid__title {
   display: flex;
   justify-content: center;
-  // border: 2px solid black;
+}
+
+.grid__item-content {
+  display: none;
+  position: absolute;
+  top: 10%;
+  padding: 0.5rem;
+  color: white;
+  z-index: 3;
+
+  &:hover {
+    .grid__item-pic {
+      filter: brightness(30%);
+    }
+  }
+
+  &-title {
+    text-align: center;
+  }
 }
 
 .grid {
@@ -25,23 +43,22 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
     flex-grow: 1;
     width: calc(100% / 3);
     min-width: 20rem;
-    // max-width: 21rem;
     margin: auto;
 
     &-pic {
       width: 100%;
       height: 100%;
       object-fit: cover;
-    }
 
-    &-content {
-      position: absolute;
-      top: 10%;
-      padding: 0.5rem;
+      &:hover {
+        filter: brightness(30%);
 
-      &-title {
-        text-align: center;
+        .grid__item-content {
+          display: block;
+          // filter: brightness(100%);
+        }
       }
     }
+
   }
 }
