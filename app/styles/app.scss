@@ -4,24 +4,7 @@
 $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 @import 'font-awesome/scss/font-awesome';
 @import 'box-sizing';
-
-.top {
-  border-bottom: 2px solid black;
-}
-
-.title {
-  // display: flex;
-  // justify-content: center;
-  margin: 0;
-  padding-top: 2rem;
-  text-align: center;
-
-  &__links {
-    display: flex;
-    justify-content: space-around;
-    padding-bottom: 2rem;
-  }
-}
+@import 'top';
 
 .section-grid {
   margin-top: 5rem;

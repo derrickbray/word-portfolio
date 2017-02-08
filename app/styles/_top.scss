@@ -1,0 +1,16 @@
+
+.top {
+  border-bottom: 2px solid black;
+}
+
+.title {
+  margin: 0;
+  padding-top: 2rem;
+  text-align: center;
+
+  &__links {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 2rem;
+  }
+}
