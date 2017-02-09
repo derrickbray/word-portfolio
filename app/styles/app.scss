@@ -19,15 +19,10 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
   display: none;
   position: absolute;
   top: 10%;
+  margin: 0;
   padding: 0.5rem;
   color: white;
   z-index: 3;
-
-  &:hover {
-    .grid__item-pic {
-      filter: brightness(30%);
-    }
-  }
 
   &-title {
     text-align: center;
@@ -43,22 +38,23 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
     flex-grow: 1;
     width: calc(100% / 3);
     min-width: 20rem;
-    margin: auto;
+    margin: 0 auto;
+    filter: brightness(30%);
 
-    &-pic {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
+    &:hover {
+      filter: brightness(100%);
 
-      &:hover {
-        filter: brightness(30%);
-
-        .grid__item-content {
-          display: block;
-          // filter: brightness(100%);
-        }
+      .grid__item-content {
+        display: block;
       }
     }
 
+    &-pic {
+      display: block;
+      width: 100%;
+      height: 15rem;
+      margin: 0;
+      object-fit: cover;
+    }
   }
 }
