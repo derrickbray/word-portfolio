@@ -1,12 +1,13 @@
 
 .top {
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid $c-primary;
 }
 
 .title {
   margin: 0;
   padding-top: 2rem;
   text-align: center;
+  color: $c-primary;
 
   &__links {
     display: flex;

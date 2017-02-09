@@ -1,5 +1,6 @@
 // @import 'yoga-sass/assets/yoga';
 // @import 'normalize-css/normalize';
+$c-primary: blue;
 
 $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 @import 'font-awesome/scss/font-awesome';
@@ -15,20 +16,6 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
   justify-content: center;
 }
 
-.grid__item-content {
-  display: none;
-  position: absolute;
-  top: 10%;
-  margin: 0;
-  padding: 0.5rem;
-  color: white;
-  z-index: 3;
-
-  &-title {
-    text-align: center;
-  }
-}
-
 .grid {
   display: flex;
   flex-wrap: wrap;
@@ -39,13 +26,27 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
     width: calc(100% / 3);
     min-width: 20rem;
     margin: 0 auto;
-    filter: brightness(30%);
+    filter: brightness(20%);
+
+    &-content {
+      // display: none;
+      position: absolute;
+      top: 10%;
+      margin: 0;
+      padding: 0.5rem;
+      color: $c-primary;
+      filter: brightness(200%);
+
+      &-title {
+        text-align: center;
+      }
+    }
 
     &:hover {
       filter: brightness(100%);
 
       .grid__item-content {
-        display: block;
+        display: none;
       }
     }
 
