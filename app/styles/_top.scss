@@ -6,13 +6,16 @@
 .title {
   margin: 0;
   padding-top: 2rem;
-  text-align: center;
   color: $c-primary;
+  text-align: center;
 
   &__links {
     display: flex;
     justify-content: space-around;
     padding-bottom: 2rem;
-    color: $c-primary;
+
+    a {
+      color: $c-primary;
+    }
   }
 }
