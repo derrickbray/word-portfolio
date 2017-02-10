@@ -33,9 +33,11 @@
       // display: none;
       position: absolute;
       top: 10%;
+      width: 100%;
       margin: 0;
       padding: 0.5rem;
       color: $c-primary;
+      text-align: center;
 
       &-title {
         text-align: center;
