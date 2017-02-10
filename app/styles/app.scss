@@ -8,26 +8,3 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 @import 'top';
 @import 'grid';
 @import 'about';
-
-.skill {}
-
-.card {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-
-  &__column {
-    flex-grow: 1;
-    min-width: 15rem;
-  }
-
-  &__item {
-    color: $c-primary;
-    text-align: center;
-  }
-}
-
-.underline {
-  border-bottom: 2px solid $c-primary;
-
-}
