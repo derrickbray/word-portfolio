@@ -9,11 +9,20 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 @import 'grid';
 
 .hi {
-  color: $c-primary;
+  // color: $c-primary;
   font-size: 2rem;
 }
 
 .about {
+  // background-color: $c-primary;
+
+  &__title {
+    display: flex;
+    justify-content: center;
+    // margin: 0;
+    color: $c-primary;
+  }
+
   &__content {
     display: flex;
     flex-wrap: wrap;
@@ -22,6 +31,7 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 
     &-text {
       width: 50%;
+      color: $c-primary;
       font-size: 1.5rem;
     }
 
