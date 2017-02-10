@@ -1,7 +1,7 @@
 // @import 'yoga-sass/assets/yoga';
 // @import 'normalize-css/normalize';
 $c-primary: rgba(55, 164, 143, 1);
-$c-background: rgba(101, 118, 115, 0.15);
+$c-background: rgba(101, 118, 115, 0.5);
 $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 @import 'font-awesome/scss/font-awesome';
 @import 'box-sizing';
@@ -14,12 +14,16 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 .card {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
 
-  &__column {}
+  &__column {
+    flex-grow: 1;
+    min-width: 15rem;
+  }
 
   &__item {
     color: $c-primary;
+    text-align: center;
   }
 }
 
