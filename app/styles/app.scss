@@ -16,10 +16,14 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
   flex-wrap: wrap;
   justify-content: space-around;
 
-
   &__column {}
 
   &__item {
     color: $c-primary;
   }
+}
+
+.underline {
+  border-bottom: 2px solid $c-primary;
+
 }
