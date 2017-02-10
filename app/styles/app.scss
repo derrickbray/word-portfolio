@@ -7,3 +7,25 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 @import 'box-sizing';
 @import 'top';
 @import 'grid';
+
+.about {
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &-text {
+      width: 50%;
+    }
+
+    &-pic {
+      width: 30%;
+      height: 40vh;
+      border-radius: 50%;
+      background-image: url('family.jpg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+  }
+}
