@@ -6,6 +6,7 @@
   justify-content: center;
   margin-top: 5rem;
   color: $c-primary;
+  font-size: 2rem;
 }
 
 .grid {
@@ -22,7 +23,7 @@
 
     &:hover {
       .grid__item-pic {
-        transition: 0.9s;
+        transition: 0.7s;
         filter: brightness(100%);
       }
 
