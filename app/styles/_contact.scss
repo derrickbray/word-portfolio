@@ -1,0 +1,38 @@
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  height: 60vh;
+  margin-bottom: 2rem;
+  filter: brightness(70%);
+
+  &__content {
+    height: 100%;
+    // margin-top: 1rem;
+
+    &-pic {
+      width: 30%;
+      min-width: 18rem;
+      height: 40vh;
+      border: 4px solid $c-primary;
+      border-radius: 50%;
+      background-image: url('phone.jpg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      box-shadow: 0.2rem 0.2rem 0.4rem rgba(0,0,0,0.4);
+    }
+    &-item {
+      color: $c-primary;
+      a {
+        color: $c-primary;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.no-margin {
+  margin-bottom: 0;
+}
